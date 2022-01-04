@@ -7,8 +7,6 @@
 }
 body {
   background: #f1faf5;
-  /* font-family: "Comforter Brush", cursive; */
-  /* font-family: "Luckiest Guy", cursive; */
   font-family: "Rubik", sans-serif;
   font-size: 12px;
 }
@@ -25,9 +23,10 @@ h1 {
   color: var(--main-color);
 }
 h2 {
+  font-family: "Luckiest Guy", cursive;
   font-size: 30px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin: 15px 0 30px;
 }
 
 ul {
@@ -57,7 +56,7 @@ ul li a:hover {
 .menu {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 40px;
   justify-content: center;
 }
 .menu .item {
