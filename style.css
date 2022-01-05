@@ -1,5 +1,6 @@
 :root {
   --main-color: #036a38;
+  --warna-merah: #f42f67;
 }
 * {
   padding: 0;
@@ -37,6 +38,7 @@ ul {
 ul li {
   list-style: none;
   margin: 0 5px;
+  flex-shrink: 0;
 }
 ul li a {
   display: block;
@@ -56,7 +58,7 @@ ul li a:hover {
 .menu {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: 35px;
   justify-content: center;
 }
 .menu .item {
@@ -87,7 +89,7 @@ ul li a:hover {
   padding: 10px 0;
 }
 .menu .harga .merah {
-  color: red;
+  color: var(--warna-merah);
 }
 .menu .harga .coret {
   text-decoration: line-through;
@@ -128,7 +130,7 @@ ul li a:hover {
 }
 .menu .badge {
   position: absolute;
-  background: #f42f67;
+  background: var(--warna-merah);
   padding: 5px 15px;
   border-radius: 5px;
   z-index: 2;
@@ -153,4 +155,15 @@ ul li a:hover {
 }
 .button-see a:hover {
   background: tomato;
+}
+
+@media (max-width: 480px) {
+  .menu .item {
+    width: 100%;
+    margin: 0;
+  }
+  ul {
+    justify-content: left;
+    overflow-x: scroll;
+  }
 }
